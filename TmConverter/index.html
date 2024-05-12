@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            function temp(celsius)  { 
+             return (celsius+273.15);
+            }
+              function temp1(celsius){
+                return ((celsius*9)/5)+32;
+              }
+              //kelvin convert to celsius
+         function temp2(kelvin) {
+          return (kelvin-273.15);
+         }
+         //kelvin convert to fahrenheit
+         function temp3(kelvin) {
+          return (kelvin-273.15)*9/5+32;
+         }
+         //fahrenheit convert to celsius
+function temp4(fahrenheit){
+  return (fahrenheit-32)*5/9;
+}
+//fahrenheit convert to kelvin
+function temp5(fahrenheit){
+  return (fahrenheit-32)*5/9+273.15;
+}
+var celsius=parseFloat(prompt("enter the value in temprechar:"));
+var kelvin=parseFloat(prompt("enter the kelvin value:"));
+var fahrenheit=parseFloat(prompt("enter the fahrenheit value:"));
+console.log("the value of given temerature in kelvin is="+temp(celsius));
+console.log("the value of given temerature in fahre is="+temp1(celsius));
+ console.log("the value of given temerature kelvin convert to celsius="+temp2(kelvin));
+ console.log("the value of given temerature kelvin convert to fahrenheit ="+temp3(kelvin));
+ console.log("the value of given temerature fahrenheit convert to celsius ="+temp4(fahrenheit));
+ console.log("the value of given temerature fahrenheit convert to kelvin ="+temp5(fahrenheit));
+        </script>
+    </body>
+</html>
